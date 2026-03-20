@@ -21,7 +21,6 @@ const reviewsRouter = require('./routes/review.js');
 const userRouter = require('./routes/user.js');
 const ExpressError = require("./utils/ExpressError.js");
 
-// const MONGO_URL = 'mongodb://127.0.0.1:27017/stayly';
 const MONGO_URL = process.env.ATLASDB_URL;
 
 // Express config
@@ -80,7 +79,7 @@ app.use((req, res, next) => {
 
 // Routes 
 app.get('/', (req, res) => {
-    res.render('listings');
+    res.redirect('/listings');
 });
 
 app.use('/listings', listingsRouter);
@@ -104,7 +103,7 @@ async function main() {
     console.log('Connected to DB');
 
     app.listen(port, () => {
-        console.log(`Server is running on http://localhost:${port}/listings`);
+        console.log(`Server is running on http://localhost:${port}`);
     });
 };
 
