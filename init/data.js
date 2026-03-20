@@ -348,5 +348,5 @@ const sampleListings = [
         country: "Costa Rica",
     },
 ];
-cd .module.
+
 module.exports = { data: sampleListings };
