@@ -148,8 +148,7 @@ http://localhost:8080
 ---
 
 ## 📸 Screenshots
-
-![alt text](image.png)
+<img width="1919" height="1014" alt="image" src="https://github.com/user-attachments/assets/52e0e956-e88a-4061-ad4e-8cbe88a0d386" />
 
 ---
 
